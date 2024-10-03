@@ -17,6 +17,14 @@ h3 {
 
 ul {
     background-color: rgb(82, 190, 36);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+}
+
+li a {
+    display: block;
 }
 
 /* id menu */
@@ -46,5 +54,5 @@ ul {
 #image_profil {
     width: 180px;
     height: 201px;
-    align-self: center;
+    margin: auto;
 }
