@@ -1,2 +1,221 @@
 #Page principale du portfolio
+<!DOCTYPE html>
 
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<script src="JavaScript_echec.js" async></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="CSS_echec.css">
+</head>
+
+<body>
+
+<button id='bouton_menu' >  options  </button> 
+	<ul id='menu_options' hidden='true' line-height='50%'>
+		<li> <button> <a href="HTML_regles.html"> Regles </a>  </button>  </li>
+		<li> <button> <div id='newGame'> Nouvelle partie</div> </button>  </li>
+		<li> <button id='bouton_opts_avance'> options +        </button> 
+			<ul id='opts_avance' hidden='true'> 
+			<li> nombre de pieces en vie : 	<div id='nb_piece'> 32  </div>   </li>
+			<li> nombre d'intrications : 	<div id='nb_intric'> 0	</div> modifier max : <button id='max_intric'> 100 </button> </li>
+			<li> nombre de tours : 			<div id='nb_tour'> 0 	</div>   </li>
+			<li> Mode choix des probas :    <button id='choix_proba'> désactivé </button> </li>
+			<li> Chronometres : 			<button id="activ_chrono"> activés </button> </li>
+			<li> Définir temps :			<button id="setChr">set</button> </li>
+			</ul> 														</li>
+		
+		<!--
+		<li><button> Sauvegarder </button></li>
+		<br>
+		<li><button> Importer </button></li>
+		<br> -->
+	</ul> 
+
+<h4>infos case : <div id='info_case'> </div> </h4>          
+
+
+
+
+
+
+
+
+
+
+
+
+<table >
+<tr><td width="25%">
+<h3>Blanc</h3>
+<br>
+<div class="chronometre">
+	<h1 id='TimerB'><time>00:02:00</time></h1>
+	<button id="strtB">start</button>
+	<button id="stpB">stop</button>
+	
+</div>
+
+
+</td>
+
+<td rowspan="2">
+<h1> Echiquier Quantique </h1>
+<table id='jeu'>
+	<tr>
+		<th class='lettre' id='A'> A </th>
+		<th class='lettre' id='B'> B </th>
+		<th class='lettre' id='C'> C </th>
+		<th class='lettre' id='D'> D </th>
+		<th class='lettre' id='E'> E </th>
+		<th class='lettre' id='F'> F </th>
+		<th class='lettre' id='G'> G </th>
+		<th class='lettre' id='H'> H </th>
+		<th class='chiffres'></th>
+		</tr>
+	<tr>
+		<th class='case_B' id='0'><img class="piece" id="TN0" src="image/pieces/Tour-N.png" alt='tour noir'> </th>
+		<th class='case_N' id='1'><img class="piece" id="CN0" src="image/pieces/Cavalier-N.png"></th>
+		<th class='case_B' id='2'><img class="piece" id="FN0" src="image/pieces/Fou-N.png"></th>
+		<th class='case_N' id='3'><img class="piece" id="DN0" src="image/pieces/Dame-N.png"></th>
+		<th class='case_B' id='4'><img class="piece" id="RN0" src="image/pieces/Roi-N.png"></th>
+		<th class='case_N' id='5'><img class="piece" id="FN1" src="image/pieces/Fou-N.png"></th>
+		<th class='case_B' id='6'><img class="piece" id="CN1" src="image/pieces/Cavalier-N.png"></th>
+		<th class='case_N' id='7'><img class="piece" id="TN1" src="image/pieces/Tour-N.png"></th>
+		<th class='chiffre'>1</th>
+		</tr>
+	<tr>
+		<th class='case_N' id='8'><img class="piece" id="PN0" src="image/pieces/Pion-N.png"></th>
+		<th class='case_B' id='9'><img class="piece" id="PN1" src="image/pieces/Pion-N.png"></th>
+		<th class='case_N' id='10'><img class="piece" id="PN2" src="image/pieces/Pion-N.png"></th>
+		<th class='case_B' id='11'><img class="piece" id="PN3" src="image/pieces/Pion-N.png"></th>
+		<th class='case_N' id='12'><img class="piece" id="PN4" src="image/pieces/Pion-N.png"></th>
+		<th class='case_B' id='13'><img class="piece" id="PN5" src="image/pieces/Pion-N.png"></th>
+		<th class='case_N' id='14'><img class="piece" id="PN6" src="image/pieces/Pion-N.png"></th>
+		 <th class='case_B' id='15'><img class="piece" id="PN7" src="image/pieces/Pion-N.png"></th> 
+		<th class='chiffre'>2</th>
+		</tr>
+	<tr>
+		<th class='case_B' id='16'></th>
+		<th class='case_N' id='17'></th>
+		<th class='case_B' id='18'></th>
+		<th class='case_N' id='19'></th>
+		<th class='case_B' id='20'></th>
+		<th class='case_N' id='21'></th>
+		<th class='case_B' id='22'></th>
+		<th class='case_N' id='23'></th>
+		<th class='chiffre'>3</th>
+		</tr>
+	<tr>
+		<th class='case_N' id='24'></th>
+		<th class='case_B' id='25'></th>
+		<th class='case_N' id='26'></th>
+		<th class='case_B' id='27'></th>
+		<th class='case_N' id='28'></th>
+		<th class='case_B' id='29'></th>
+		<th class='case_N' id='30'></th>
+		<th class='case_B' id='31'></th>
+		<th class='chiffre'>4</th>
+		</tr>
+	<tr>
+		<th class='case_B' id='32'></th>
+		<th class='case_N' id='33'></th>
+		<th class='case_B' id='34'></th>
+		<th class='case_N' id='35'></th>
+		<th class='case_B' id='36'></th>
+		<th class='case_N' id='37'></th>
+		<th class='case_B' id='38'></th>
+		<th class='case_N' id='39'></th>
+		<th class='chiffre'>5</th>
+		</tr>
+	<tr>
+		<th class='case_N' id='40'></th>
+		<th class='case_B' id='41'></th>
+		<th class='case_N' id='42'></th>
+		<th class='case_B' id='43'></th>
+		<th class='case_N' id='44'></th>
+		<th class='case_B' id='45'></th>
+		<th class='case_N' id='46'></th>
+		<th class='case_B' id='47'></th>
+		<th class='chiffre'>6</th>
+		</tr>
+	<tr>
+		<th class='case_B' id='48'><img class="piece" id="PB0" src="image/pieces/Pion-B.png"></th>
+		<th class='case_N' id='49'><img class="piece" id="PB1" src="image/pieces/Pion-B.png"></th>
+		<th class='case_B' id='50'><img class="piece" id="PB2" src="image/pieces/Pion-B.png"></th>
+		<th class='case_N' id='51'><img class="piece" id="PB3" src="image/pieces/Pion-B.png"></th>
+		<th class='case_B' id='52'><img class="piece" id="PB4" src="image/pieces/Pion-B.png"></th>
+		<th class='case_N' id='53'><img class="piece" id="PB5" src="image/pieces/Pion-B.png"></th>
+		<th class='case_B' id='54'><img class="piece" id="PB6" src="image/pieces/Pion-B.png"></th>
+		<th class='case_N' id='55'><img class="piece" id="PB7" src="image/pieces/Pion-B.png"></th>
+		<th class='chiffre'>7</th>
+		</tr>
+	<tr>
+		<th class='case_N' id='56'><img class="piece" id="TB0" src="image/pieces/Tour-B.png"></th>
+		<th class='case_B' id='57'><img class="piece" id="CB0" src="image/pieces/Cavalier-B.png"></th>
+		<th class='case_N' id='58'><img class="piece" id="FB0" src="image/pieces/Fou-B.png"></th>
+		<th class='case_B' id='59'><img class="piece" id="DB0" src="image/pieces/Dame-B.png"></th>
+		<th class='case_N' id='60'><img class="piece" id="RB0" src="image/pieces/Roi-B.png"></th>
+		<th class='case_B' id='61'><img class="piece" id="FB1" src="image/pieces/Fou-B.png"></th>
+		<th class='case_N' id='62'><img class="piece" id="CB1" src="image/pieces/Cavalier-B.png"></th>
+		<th class='case_B' id='63'><img class="piece" id="TB1" src="image/pieces/Tour-B.png"></th>
+		<th class='chiffre'>8</th>
+		</tr>
+	
+</table>
+</td>
+
+<td width="25%">
+<h3>Noir</h3>
+<br>
+<div class="chronometre">
+<h1 id='TimerN'><time>00:02:00</time></h1>
+	<button id="strtN">start</button>
+	<button id="stpN">stop</button>
+	
+</div>
+
+ 
+</td>
+
+<tr><td>
+<h4> >Pièces mortes </h4> 
+<br>
+<div  id="P_mortes_B"> 
+</div>
+<br>
+<br>
+<br>
+<br>
+</td>
+<td>
+<h4> >Pièces mortes </h4> 
+<br>
+<div  id="P_mortes_N"> 
+</div>
+<br>
+<br>
+<br>
+<br>
+</tr></td>
+<tr>
+ 
+
+
+<td colspan="3">
+
+		
+
+<button id='Jouer'> Jouer </button>
+</td>
+
+</tr>
+
+		
+</td>
+
+</table>
+ 
+	
+</body>
