@@ -1,7 +1,50 @@
+/* balises */
+
 body {
     background-color: white;
 }
 
 h1 {
     text-align: center;
+}
+
+h3 {
+    margin-left: 5%;
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+
+ul {
+    background-color: rgb(82, 190, 36);
+}
+
+/* id menu */
+
+#Eng_C {
+    color: brown;
+}
+
+#Int_M {
+    color: orange;
+}
+
+#Susta {
+    color: rgb(77, 226, 226);
+}
+
+#Sp_Ac {
+    color: green;
+}
+
+#Car_D {
+    color: blue;
+}
+
+/* id image*/
+
+#image_profil {
+    width: 180px;
+    height: 201px;
+    align-self: center;
 }
