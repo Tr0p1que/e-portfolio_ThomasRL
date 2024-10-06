@@ -4,6 +4,8 @@ header {
     text-align: center;
     padding: 20px;
 }
+
+
 /* barre de navigation */
 nav {
     overflow: hidden;
@@ -25,7 +27,15 @@ nav a:hover {
     color: rgb(51, 37, 49);
 }
 
+/*main */ 
 
+main {
+    background-color: rgb(255, 246, 255);
+}
+/* Footer */
+footer {
+    color: blue;
+}
 
 /* balises */
 
@@ -40,7 +50,7 @@ h1 {
 
 
 body {
-    background-color: rgb(252, 219, 252);
+    background-color: rgb(255, 246, 255);
 }
 
 
