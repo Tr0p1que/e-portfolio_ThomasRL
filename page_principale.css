@@ -1,4 +1,4 @@
-/* header */
+/*________________________________________________ header _________________________________________*/
 header {
     background-color: rgb(215, 177, 254);
     text-align: right;
@@ -10,37 +10,56 @@ header {
     height: 24px;
 }
 
-/* barre de navigation */
+/*_____________________________________ barre de navigation____________________________________ */
 nav {
     overflow: hidden;
     background-color: rgb(51, 37, 49);
     color: white;
+    text-decoration: none;
+    position: sticky;
+    top: 0;
 
 }
-
-nav a {
+        /* Ceux sans dropdown */
+.simple {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: #ffffff;
     text-align: center;
     padding: 16px 16px;
     text-decoration: none;
 }
 
-nav a:hover {
+.simple a {
+    text-decoration: none;
+}
+
+.simple:hover {
     background-color: #ddd;
     color: rgb(51, 37, 49);
 }
-
+        /* Ceux avec dropdown */
 .dropdown {
-    /*position: relative;*/
-    display: inline-block;
+    float: left;
+    color: #fcfcfc;
+    display: block;
+}
+
+.dropdown-button {
+    background-color: rgb(51, 37, 49);
+    padding: 16px 16px;
+    border: none;
+    color: white;
+}
+
+.dropdown-button:hover {
+    background-color: #ddd;
+    color: rgb(51, 37, 49);
 }
 
 .dropdown-content {
     position: absolute;
     display: none;
-    min-width: 160px;
     background-color: black;
     z-index: 1;
 }
@@ -51,11 +70,16 @@ nav a:hover {
     display: block;
 }
 
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: rgb(51, 37, 49);
+}
+
 .dropdown:hover .dropdown-content {
     display: block;
-  }
+}
 
-/*main */ 
+/*_______________________________________________main_____________________________________________ */ 
 
 main {
     background-color: rgb(255, 246, 255);
@@ -63,6 +87,9 @@ main {
 /* Footer */
 footer {
     color: blue;
+    background-color: bisque;
+    height: 40px;
+    
 }
 
 /* balises */
@@ -93,17 +120,30 @@ body {
   /* colonne de gauche */
 .colonne.gauche {
     width: 25%;
-    padding: 10px;
+    height: 1500px;
+    padding: 2%;
+    background-color: #ddd;
 }
 
+.block_presentation {
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 50px;
+    padding: 20px;
+    width: 400px;
+    background-color: aquamarine;
+}
   
 /* colonne principale */
 .colonne.milieu {
   width: 75%;
+  height: 1500px;
+  background-color: rgb(225, 250, 250);
+  padding-top: 2%;
   
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1050px) {
     .colonne.gauche, .colonne.milieu {
         width: 100%;
     }
