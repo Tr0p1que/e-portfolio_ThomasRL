@@ -1,0 +1,39 @@
+
+
+
+
+
+/* Colonnes du body */
+.colonne {
+    float: left;
+    color:black;
+    /*background-color: plum;*/
+}
+  
+  /* colonne de gauche */
+
+header {
+    background-color: #c499ec;
+    height: 400px;
+    width: 100%;
+}
+.colonne.gauche {
+    width: 25%;
+    height: 1985px;
+    background-color: #f9e0fc;
+    position: relative;
+}
+
+.skills {
+    height: 1585px;
+    background-color: #f9e0fc;
+}
+  
+/* colonne principale */
+.colonne.droite {
+  width: 75%;
+  height: 1985px;
+  background-color: rgb(255, 234, 251);
+  padding-top: 2%;
+  
+}
