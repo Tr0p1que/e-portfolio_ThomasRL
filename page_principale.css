@@ -16,7 +16,6 @@ nav {
     background-color: rgb(51, 37, 49);
     color: white;
     text-decoration: none;
-    position: sticky;
     top: 0;
 
 }
@@ -40,9 +39,10 @@ nav {
 }
         /* Ceux avec dropdown */
 .dropdown {
-    float: left;
+    
     color: #fcfcfc;
-    display: block;
+    display: inline-block;
+    position: relative;
 }
 
 .dropdown-button {
@@ -58,7 +58,7 @@ nav {
 }
 
 .dropdown-content {
-    position: absolute;
+    position: fixed;
     display: none;
     background-color: black;
     z-index: 1;
@@ -123,6 +123,7 @@ body {
     height: 1500px;
     padding: 2%;
     background-color: #ddd;
+    position: relative;
 }
 
 .block_presentation {
