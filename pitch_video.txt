@@ -1,0 +1,34 @@
+• 3 mins MAX not read from a script
+• enthusiastic, conversational flow, good quality English
+• structure, reflection, arguments
+✓ NOW: Who are you? What are you currently studying?
+✓ (brief) PAST: Which experiences (academic and other) have lead you to
+N7?
+✓ FUTURE: What you would like to do in the near, mid & distant future?
+Who are your 3 role models ? What are your 3 potential international
+mobility projects ? How is your mobility aligned with your role models ?
+What are you plans A, B, C…? How will you reach your goal(s)?
+
+
+
+Hello, 
+My name is Thomas and I'm an Engineer student at ENSEEIHT in Toulouse. I'm in first year at ENSEEIHT where i'm studying Applied Mathematics and Computer science. 
+
+I'm comming from a two years French preparatory class in Paris after I passed my Baccalaureate with disntinctions.
+
+In my free time, I like developping small projects such as a quantum chess game with a friend. However, I'm often climbing with friends or running. 
+
+In the futur, I'm interested by working in logiciel developpement or data scientist programs. 
+
+
+
+
+
+Synthèse entretiens ingénieurs :
+
+La filière Genie Logiciel est la plus adaptée (Damien). Mais possibilité de se réorienter (Marc). 
+Qualités requises : Abstraction (Damien), autonome (Damien).
+
+Marc : Travailler dans une petite entreprise (Marc) liens avec les autres développeurs. Avoir des petits projets réguliers avec un temps imparti (Damien aussi). Réunions toutes les X semaines pour avancement. Mais tout de même assez autonomes dans le travail. 
+
+Damien : Méthode agile : découper le problème en sous problèmes et tester chaque sous problème. Au quotidien beaucoup de développement mais parfois réunions. Télétravail : 2 à 3 jours par semaine (1 jour pour Marc). Gros projet depuis 6 ans chez Airbus. 
