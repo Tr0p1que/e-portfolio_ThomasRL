@@ -27,6 +27,7 @@ nav {
     text-align: center;
     padding: 16px 16px;
     text-decoration: none;
+    min-width: 300px;
 }
 
 .simple a {
@@ -43,6 +44,7 @@ nav {
     color: #fcfcfc;
     display: inline-block;
     position: relative;
+    
 }
 
 .dropdown-button {
@@ -50,6 +52,7 @@ nav {
     padding: 16px 16px;
     border: none;
     color: white;
+    min-width: 300px;
 }
 
 .dropdown-button:hover {
@@ -62,6 +65,7 @@ nav {
     display: none;
     background-color: black;
     z-index: 1;
+    min-width: 300px;
 }
 
 .dropdown-content a {
