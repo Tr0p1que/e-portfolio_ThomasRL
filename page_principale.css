@@ -107,7 +107,9 @@ footer {
 
 /* balises */
 
-
+h1 {
+    text-align: center;
+}
 
 
 
@@ -129,7 +131,7 @@ footer {
 .block_titre {
     text-align: center;
     width: 100%;
-    height: 5rem;
+    height: 20rem;
     background-color: var(--couleur2);
 }
 
@@ -146,10 +148,21 @@ footer {
   height: 50rem;
   background-color: white;
   padding-top: 2%;
-  text-align: center;
   
 }
 
+.bouton_CV {
+    background-color: var(--couleur1);
+    color: var(--couleur2);
+    width : 25%;
+    height: 15rem;
+    margin-left: 2rem;
+    border-top-right-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+}
+
+
+/* adaptation téléphone */
 @media screen and (max-width: 1050px) {
     .colonne.gauche, .colonne.milieu {
         width: 100%;
@@ -162,6 +175,11 @@ footer {
         width: 100%;
         z-index: 5;
         height: 10rem;
+    }
+
+    .sous_nav {
+        height: 10rem;
+        width: 100%;
     }
 
 }
