@@ -31,7 +31,7 @@ nav {
     text-align: center;
     padding: 16px 16px;
     text-decoration: none;
-    min-width: 300px;
+    width: 20rem;
 }
 
 .simple a {
@@ -153,6 +153,7 @@ footer {
     .colonne.gauche, .colonne.milieu {
         width: 100%;
     }
+
 }
 
 
