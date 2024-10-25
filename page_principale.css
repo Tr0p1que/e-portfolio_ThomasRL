@@ -120,7 +120,7 @@ footer {
   /* colonne de gauche */
 .colonne.gauche {
     width: 25%;
-    height: 1500px;
+    height: 50rem;
     background-color: var(--couleur2);
     
 }
@@ -129,7 +129,7 @@ footer {
     text-align: center;
     width: 100%;
     height: 5rem;
-    background-color: #adc564;
+    background-color: var(--couleur2);
 }
 
 .block_presentation {
@@ -142,7 +142,7 @@ footer {
 /* colonne principale */
 .colonne.milieu {
   width: 75%;
-  height: 1500px;
+  height: 50rem;
   background-color: white;
   padding-top: 2%;
   text-align: center;
