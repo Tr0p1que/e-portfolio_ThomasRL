@@ -130,6 +130,7 @@ h1 {
     width: 25%;
     height: 50rem;
     background-color: var(--couleur2);
+    text-align: justify;
     
 }
 
@@ -143,10 +144,9 @@ h1 {
 
 .block_presentation {
     padding: 1rem;
-    width: 400px;
+    width: 100%;
     background-color: var(--couleur1);
     color: var(--couleur2);
-    margin-left: 2rem;
 }
   
 /* colonne principale */
@@ -177,7 +177,7 @@ h1 {
 
 
 /* adaptation téléphone */
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1300px) {
     .colonne.gauche, .colonne.milieu {
         width: 100%;
     }
@@ -194,6 +194,13 @@ h1 {
     .sous_nav {
         height: 10rem;
         width: 100%;
+    }
+
+    .block_presentation {
+        padding: 1rem;
+        width: 30rem;
+        background-color: var(--couleur1);
+        color: var(--couleur2);
     }
 
 }
