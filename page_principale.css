@@ -175,6 +175,9 @@ h1 {
     border-bottom-left-radius: 5rem;
 }
 
+.bouton_CV a {
+    text-decoration: none;
+}
 
 /* adaptation téléphone */
 @media screen and (max-width: 1300px) {
