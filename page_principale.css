@@ -84,7 +84,7 @@ nav {
 
 .dropdown-content a:hover {
     background-color: var(--couleur2);
-    color: rgb(51, 37, 49) ease-in 2s;
+    color: rgb(51, 37, 49) ;
 }
 
 .dropdown:hover .dropdown-content {
