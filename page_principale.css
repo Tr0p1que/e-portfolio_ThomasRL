@@ -73,7 +73,7 @@ nav {
     display: none;
     background-color: black;
     z-index: 1;
-    min-width: 300px;
+    min-width: 15%;
 }
 
 .dropdown-content a {
