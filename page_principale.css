@@ -99,7 +99,7 @@ nav {
 
 main {
     background-color: var(--couleur2);
-    height: 60rem;
+    height: 70rem;
 }
 /* Footer */
 footer {
@@ -127,8 +127,8 @@ h1 {
   
   /* colonne de gauche */
 .colonne.gauche {
-    width: 25%;
-    height: 50rem;
+    width: 30%;
+    height: 60rem;
     background-color: var(--couleur2);
     text-align: justify;
     
@@ -151,8 +151,8 @@ h1 {
   
 /* colonne principale */
 .colonne.milieu {
-  width: 75%;
-  height: 50rem;
+  width: 70%;
+  height: 60rem;
   background-color: white;
   
 }
