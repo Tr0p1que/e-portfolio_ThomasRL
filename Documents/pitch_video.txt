@@ -9,20 +9,27 @@ Who are your 3 role models ? What are your 3 potential international
 mobility projects ? How is your mobility aligned with your role models ?
 What are you plans A, B, C…? How will you reach your goal(s)?
 
-
+/////////////////////////////////////////////////////
 
 Hello, 
 My name is Thomas and I'm an Engineer student at ENSEEIHT in Toulouse. I'm in first year at ENSEEIHT where i'm studying Applied Mathematics and Computer science. 
 
 I'm comming from a two years French preparatory class in Paris after I passed my Baccalaureate with disntinctions.
 
-In my free time, I like developping small projects such as a quantum chess game with a friend. However, I'm often climbing with friends or running. 
+In my free time, I like developping small projects such as a quantum chess game with a friend. However, I'm often climbing with friends or running every week-end.
+I'am also involved in volontaring. JO  
 
-In the futur, I'm interested by working in logiciel developpement or data scientist programs. 
+In the futur, I'm interested by working in logiciel developpement or data scientist programs. It's why I have chosen and had the chance to meet Damien and Marc.
 
+Marc : Devolpper Work in a small company, work in group with other developpers. He spoke to me about what he is doing in his job. He works with small projects.
+Damien : Developper also. At the opposit, is working with a big company Airbus. He is in a big
+spoke to me about remote working and Méthode agile.
 
+To resume : the most interrested is to chose the genie logiciel
+But as Marc and Damien showed I can change my sector. 
+Marc said he is working with AI. Maybe the AI speciality could be the good second chance.  
 
-
+///////////////////////////////////////////////////////
 
 Synthèse entretiens ingénieurs :
 
@@ -32,3 +39,15 @@ Qualités requises : Abstraction (Damien), autonome (Damien).
 Marc : Travailler dans une petite entreprise (Marc) liens avec les autres développeurs. Avoir des petits projets réguliers avec un temps imparti (Damien aussi). Réunions toutes les X semaines pour avancement. Mais tout de même assez autonomes dans le travail. 
 
 Damien : Méthode agile : découper le problème en sous problèmes et tester chaque sous problème. Au quotidien beaucoup de développement mais parfois réunions. Télétravail : 2 à 3 jours par semaine (1 jour pour Marc). Gros projet depuis 6 ans chez Airbus. 
+
+/////////////////////////////////////////////////////
+
+Projets mobilité : https://inpt.adv-pub.moveonfr.com/report-page-1581/
+
+Pour candidater MOVEON : https://inpt.moveonfr.com/form/555bdda10f9d300722000003/fra#
+
+- Espagne : Erasmus Complutense Madrid UCM - 61 Computing
+////////////// Pas trouvé le cursus info lié à l'échange
+EXISTE BIEN SUR MOVEON
+
+

@@ -163,16 +163,26 @@ h1 {
     padding-bottom: 1rem;
 }
 
-
-
-.bouton_CV {
+.bouton_CV{
     background-color: var(--couleur1);
     color: var(--couleur2);
+    
+}
+
+.bouton_CV.principal{
     width : 25%;
     height: 15rem;
     margin-left: 2rem;
     border-top-right-radius: 5rem;
     border-bottom-left-radius: 5rem;
+}
+
+.bouton_CV.sport{
+    width : 25%;
+    height: 5rem;
+    margin-left: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
 }
 
 .bouton_CV a {
