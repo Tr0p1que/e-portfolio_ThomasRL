@@ -40,19 +40,16 @@ nav {
     text-decoration: none;
 }
 
-.simple:hover {
+.simple:hover, .simple.actuel{
     background-color: var(--couleur2);
     color: rgb(51, 37, 49);
 }
         /* Ceux avec dropdown */
-.dropdown {
-    
+.dropdown {  
     color: var(--couleur2) ;
     display: inline-block;
     position: relative;
     width: 15%;
-    
-    
 }
 
 .dropdown-button {
@@ -63,7 +60,7 @@ nav {
     height: 5rem;
 }
 
-.dropdown-button:hover {
+.dropdown-button:hover, .dropdown-button.actuel {
     background-color: var(--couleur2);
     color: rgb(51, 37, 49);
 }
