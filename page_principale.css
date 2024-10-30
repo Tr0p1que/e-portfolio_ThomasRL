@@ -190,7 +190,7 @@ h1 {
 }
 
 /* adaptation téléphone */
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 70rem) {
     .colonne.gauche, .colonne.milieu {
         width: 100%;
     }
