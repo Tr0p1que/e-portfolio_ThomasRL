@@ -214,6 +214,8 @@ h1 {
         width: 30rem;
         background-color: var(--couleur1);
         color: var(--couleur2);
+        margin-left: auto;
+        margin-right: auto;
     }
 
 }
