@@ -136,7 +136,7 @@ h1 {
     width: 100%;
     height: 13rem;
     background-color: var(--couleur2);
-    margin-bottom: 8rem;
+    
 }
 
 .block_presentation {
@@ -144,6 +144,7 @@ h1 {
     width: 100%;
     background-color: var(--couleur1);
     color: var(--couleur2);
+    margin-top: 8rem;
 }
   
 /* colonne principale */
@@ -163,13 +164,14 @@ h1 {
 .bouton_CV{
     background-color: var(--couleur1);
     color: var(--couleur2);
-    
+    font-size: 2rem;
 }
 
 .bouton_CV.principal{
     width : 25%;
     height: 15rem;
-    margin-left: 2rem;
+    margin-left: 4%;
+    margin-right: 4%;
     border-top-right-radius: 5rem;
     border-bottom-left-radius: 5rem;
 }
@@ -208,11 +210,19 @@ h1 {
 
     .block_presentation {
         padding: 1rem;
-        width: 30rem;
+        width: 40rem;
         background-color: var(--couleur1);
         color: var(--couleur2);
         margin-left: auto;
         margin-right: auto;
+        margin-top: 2rem;
+        font-size: 2rem;
+    }
+
+    .bouton_CV{
+        background-color: var(--couleur1);
+        color: var(--couleur2);
+        font-size:2rem;
     }
 
 }
