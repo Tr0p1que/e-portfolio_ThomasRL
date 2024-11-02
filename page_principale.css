@@ -188,6 +188,10 @@ h1 {
     text-decoration: none;
 }
 
+video {
+    margin : 2rem;
+}
+
 /* adaptation téléphone */
 @media screen and (max-width: 70rem) {
     .colonne.gauche, .colonne.milieu {
