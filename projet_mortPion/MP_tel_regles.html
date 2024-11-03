@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<style>
+    body {
+    color:#a75794;
+    background-color:#401d40;}
+    h1 {text-align: center; }
+    h2{text-align: left;}
+    h3{text-align: center;}
+    h4{text-align:left;}
+    p{text-align:left;}
+    button{background: #48d775;color: black;width: 55px;height: 15px;border: none;text-align:center;}
+    table{background-color: aqua;}
+    .plat_princ{background-color : black; color: aqua;height : 200px;width : 250px;text-align: center;}
+    .plat_sec{background-color : grey;height :200px;width : 100px;}
+    .plat_mini{background-color : aqua;height :50px;width : 100px;}
+    .case{background-color : white;height : 20px;width : 20px;}
+    .jeu{background-color: green;}
+    .rouge{color: red;}
+    </style>
+</head>
+
+<h1> Mort-Pion + </h1>
+
+<h2> Règles : </h2>
+
+<p> 2 joueurs <br> Chacun son tour <br> Cliquer sur une case pour jouer</p>
+<button id="couleur">couleur</button>
+<h4> Le jeu est constitué de :</h4>
+
+<script>
+let col = document.getElementById("couleur");
+function couleur_alea_text(objet) {
+    objet.style.color = "#"+
+    ((Math.floor(Math.random() * 255)).toString(16))+
+    ((Math.floor(Math.random() * 255)).toString(16))+
+    ((Math.floor(Math.random() * 255)).toString(16));
+}
+col.onclick = function() {couleur_alea_text(document.body)}</script>
+
+<table>
+    <tr> 
+        <td class="plat_princ" id="plat_princ">
+            1. Un plateau principal 
+            <table id="jeu">
+                <tr><td><table class="jeu" id="jeu_1">
+                    <tr>
+                        <td class="case" id="case_A1"></td>
+                        <td class="case" id="case_A2"></td>
+                        <td class="case" id="case_A3"></td>
+                    </tr>
+                    <tr>
+                        <td class="case" id="case_A4"></td>
+                        <td class="case" id="case_A5"><b>A</b></td>
+                        <td class="case" id="case_A6"></td>
+                    </tr>
+                    <tr>
+                        <td class="case" id="case_A7"></td>
+                        <td class="case" id="case_A8"></td>
+                        <td class="case" id="case_A9"></td>
+                    </tr>
+                </table></td>
+                <td><table class="jeu" id="jeu_2">
+                    <tr>
+                        <td class="case" id="case_B1"></td>
+                        <td class="case" id="case_B2"></td>
+                        <td class="case" id="case_B3"></td>
+                    </tr>
+                    <tr>
+                        <td class="case" id="case_B4"></td>
+                        <td class="case" id="case_B5"><b>B</b></td>
+                        <td class="case" id="case_B6"></td>
+                    </tr>
+                    <tr>
+                        <td class="case" id="case_B7"></td>
+                        <td class="case" id="case_B8"></td>
+                        <td class="case" id="case_B9"></td>
+                    </tr>
+                </table></td>
+                <td><table class="jeu" id="jeu_3"> 
+                    <tr>
+                        <td class="case" id="case_C1"></td>
+                        <td class="case" id="case_C2"></td>
+                        <td class="case" id="case_C3"></td>
+                    </tr>
+                    <tr>
+                        <td class="case" id="case_C4"></td>
+                        <td class="case" id="case_C5"><b>C</b></td>
+                        <td class="case" id="case_C6"></td>
+                    </tr>
+                    <tr>
+                        <td class="case" id="case_C7"></td>
+                        <td class="case" id="case_C8"></td>
+                        <td class="case" id="case_C9"></td>
+                    </tr> 
+                </table></td></tr>
+
+                <tr><td><table class="jeu" id="jeu_4">
+                    <tr>
+                        <td class="case" id="case_D1"></td>
+                        <td class="case" id="case_D2"></td>
+                        <td class="case" id="case_D3"></td>
+                    </tr>
+                    <tr>
+                        <td class="case" id="case_D4"></td>
+                        <td class="case" id="case_D5"><b>D</b></td>
+                        <td class="case" id="case_D6"></td>
+                    </tr>
+                    <tr>
+                        <td class="case" id="case_D7"></td>
+                        <td class="case" id="case_D8"></td>
+                        <td class="case" id="case_D9"></td>
+                    </tr>
+                </table></td>
+                <td><table class="jeu" id="jeu_5">
+                    <tr>
+                        <td class="case" id="case_E1"></td>
+                        <td class="case" id="case_E2"></td>
+                        <td class="case" id="case_E3"></td>
+                    </tr>
+                    <tr>
+                        <td class="case" id="case_E4"></td>
+                        <td class="case" id="case_E5"><b>E</b></td>
+                        <td class="case" id="case_E6"></td>
+                    </tr>
+                    <tr>
+                        <td class="case" id="case_E7"></td>
+                        <td class="case" id="case_E8"></td>
+                        <td class="case" id="case_E9"></td>
+                    </tr>
+                </table></td>
+                <td><table class="jeu" id="jeu_6">
+                    <tr>
+                        <td class="case" id="case_F1"></td>
+                        <td class="case" id="case_F2"></td>
+                        <td class="case" id="case_F3"></td>
+                    </tr>
+                    <tr>
+                        <td class="case" id="case_F4"></td>
+                        <td class="case" id="case_F5"><b>F</b></td>
+                        <td class="case" id="case_F6"></td>
+                    </tr>
+                    <tr>
+                        <td class="case" id="case_F7"></td>
+                        <td class="case" id="case_F8"></td>
+                        <td class="case" id="case_F9"></td>
+                    </tr>
+                </table></td></tr>
+
+                <tr><td><table class="jeu" id="jeu_7">
+                    <tr>
+                        <td class="case" id="case_G1"></td>
+                        <td class="case" id="case_G2"></td>
+                        <td class="case" id="case_G3"></td>
+                    </tr>
+                    <tr>
+                        <td class="case" id="case_G4"></td>
+                        <td class="case" id="case_G5"><b>G</b></td>
+                        <td class="case" id="case_G6"></td>
+                    </tr>
+                    <tr>
+                        <td class="case" id="case_G7"></td>
+                        <td class="case" id="case_G8"></td>
+                        <td class="case" id="case_G9"></td>
+                    </tr>
+                </table></td>
+                <td><table class="jeu" id="jeu_8">
+                    <tr>
+                        <td class="case" id="case_H1"></td>
+                        <td class="case" id="case_H2"></td>
+                        <td class="case" id="case_H3"></td>
+                    </tr>
+                    <tr>
+                        <td class="case" id="case_H4"></td>
+                        <td class="case" id="case_H5"><b>H</b></td>
+                        <td class="case" id="case_H6"></td>
+                    </tr>
+                    <tr>
+                        <td class="case" id="case_H7"></td>
+                        <td class="case" id="case_H8"></td>
+                        <td class="case" id="case_H9"></td>
+                    </tr>
+                </table></td>
+                <td><table class="jeu" id="jeu_9">
+                    <tr>
+                        <td class="case" id="case_I1"></td>
+                        <td class="case" id="case_I2"></td>
+                        <td class="case" id="case_I3"></td>
+                    </tr>
+                    <tr>
+                        <td class="case" id="case_I4"></td>
+                        <td class="case" id="case_I5"><b>I</b></td>
+                        <td class="case" id="case_I6"></td>
+                    </tr>
+                    <tr>
+                        <td class="case" id="case_I7"></td>
+                        <td class="case" id="case_I8"></td>
+                        <td class="case" id="case_I9"></td>
+                    </tr>
+                </table></td></tr>
+            </table>
+
+
+
+
+
+
+
+
+
+
+        </td>
+
+        <td>
+            <table>
+                <tr>
+                    
+                <td class="plat_sec">
+                    <!-- plateau secondaire-->
+                    2. Un plateau secondaire
+                <table class="jeu" id="jeu_sec">
+                <tr>
+                    <td class="case" id="case_S1"></td>
+                    <td class="case" id="case_S2"></td>
+                    <td class="case" id="case_S3"></td>
+                </tr>
+                <tr>
+                    <td class="case" id="case_S4"></td>
+                    <td class="case" id="case_S5"></td>
+                    <td class="case" id="case_S6"></td>
+                </tr>
+                <tr>
+                    <td class="case" id="case_S7"></td>
+                    <td class="case" id="case_S8"></td>
+                    <td class="case" id="case_S9"></td>
+                </tr>
+                </table>
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- plateau miniature-->
+                        3. Un plateau Miniature
+                        <table id="jeu_mini">
+                            <tr>
+                                <td class="case" id="case_M1"><b>A</b></td>
+                                <td class="case" id="case_M2"><b>B</b></td>
+                                <td class="case" id="case_M3"><b>C</b></td>
+                            </tr>
+                            <tr>
+                                <td class="case" id="case_M4"><b>D</b></td>
+                                <td class="case" id="case_M5"><b>E</b></td>
+                                <td class="case" id="case_M6"><b>F</b></td>
+                            </tr>
+                            <tr>
+                                <td class="case" id="case_M7"><b>G</b></td>
+                                <td class="case" id="case_M8"><b>H</b></td>
+                                <td class="case" id="case_M9"><b>I</b></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            
+        </td>
+        
+    </tr>
+
+</table>
+
+<h4>Présentation :</h4>
+<p> 1. Le plateau principal est composé de 9 secteurs : A,B,C,D,E,F,G,H,I
+    chaque secteur repésentant un plateau de mort-pion.</p>
+<p> 2. Le plateau secondaire est un accessoire, il affiche seulement
+    un secteur à la fois : celui dans lequel il faut jouer. </p>
+<p> 3. Le plateau miniature est une vue globale du plateau principal.</p>
+
+<h4>But du jeu : </h4>
+
+<p> Une case du plateau miniature se colorie de la couleur du joueur
+    qui gagne une partie dans le secteur correspondant. </p>
+<p> L'objectif est de colorier les cases du plateau miniature tel qu'il
+    y ai 3 cases alignées de la même couleur.  
+</p>
+
+<h4> Comment jouer ? :</h4>
+
+<p> Le premier joueur joue où il veut dans le plateau principal.</p>
+<p> Lorsqu'un joueur joue dans une case, en fonction de sa position,
+    le joueur suivant doit jouer dans le secteur équivalent.
+<p> Ce secteur equivalent s'affiche sur le plateau secondaire.</p>
+<p> Par exemple le bleu joue dans le secteur E la case en haut à droite. 
+    Le rouge doit ensuite jouer dans le secteur C --secteur en haut a droite-- ,
+    mais où il veut. Il va donc imposer au joueur bleu un autre secteur. Et ainsi de suite... 
+</p>
+
+<h4> Comment colorier dans le plateau miniature ? :</h4>
+
+<p> Lorsqu'un joueur gagne une partie de mort-pion dans un secteur,
+    la case du plateau miniature correspondant au secteur se colorie.
+</p>
+
+<h4> Règles en vrac :</h4>
+<p> On peut continuer à faire jouer dans un secteur qui a déjà été gagné. 
+    Un secteur ne peut pas changer de couleur une fois qu'il a été colorié dans le plateau miniature. </p>
+<p> Lorsqu'un joueur doit jouer dans un secteur totalement rempli, il peut jouer où il veut dans le plateau principal.
+    C'est très fort mais en fin de partie seulement. </p>
+
+<p> Un bouton 'coup précédent' est utilisable en cas d'erreur.</p>
+    <p><div class="rouge"> Il n'est utilisable qu'une seule fois à la suite.
+    on ne peut pas revenir 2 coups en arrière.</div></p>
+<p> Il est conseillé de l'utiliser qu'en cas d'urgence. </p>
+
+<button> <a href="MP_tel_acceuil.html">acceuil</a></button>
+
+

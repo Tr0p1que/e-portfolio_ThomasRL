@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+    <style>
+	body {background-color:#401d40;}
+    h1 {color:#a75794;text-align: center; }
+    h2{text-align: center;}
+    h3{color:#a75794;text-align: center;}
+    h4{color:#a75794;text-align:left;}
+    p{color:#a75794;text-align:left;}
+    button{background: #48d775;color: black;width: auto;border-radius: 70px;line-height: 1.5em;border: none;text-align:center;font-family: verdana;margin: 2px;}
+    table{border-color: black;border-width: 10px;margin:auto;text-align:center;background-color: aqua;}
+    .plat_princ{background-color : black;height : 400px;width : 500px;}
+    .plat_sec{background-color : grey;height :400px;width : 200px;}
+    .case{background-color : white;height : 40px;width : 40px;}
+    .jeu{background-color: green;}
+    </style>
+</head>
+
+<body>
+
+<h1><div id="titre"> Mort-Pion + </div> </h1>
+
+<button><div id="click">tout</div></button>
+<button><div id="fond">fond</div></button>
+<button><div id="boutton_alea">boutton</div></button>
+<button id="la_fete">la_fete</button>
+<button id="stopper">stop !!!!</button>
+    
+<h1> <button class="jouer" id="jouer"> <a href="MP_tel.html">JOUER</a> </button> </h1>
+<h1> <button class="jouer" id="accesRegles"> <a href="MP_tel_regles.html">Regles du jeu</a> </button> </h1>
+</body>
+
+<script>
+
+let titre = document.getElementById('titre');
+let click = document.getElementById('click');
+let boutton_jouer = document.getElementById('jouer');
+let boutton_alea = document.getElementById('boutton_alea');
+let fond = document.getElementById('fond');
+let la_fete = document.getElementById('la_fete');
+let stopper = document.getElementById('stopper');
+var x;
+
+function couleur_alea_text(objet) {
+    objet.style.color = "#"+
+    ((Math.floor(Math.random() * 255)).toString(16))+
+    ((Math.floor(Math.random() * 255)).toString(16))+
+    ((Math.floor(Math.random() * 255)).toString(16));
+}
+
+function couleur_alea_fond(objet) {
+    objet.style.backgroundColor = "#"+
+    ((Math.floor(Math.random() * 255)).toString(16))+
+    ((Math.floor(Math.random() * 255)).toString(16))+
+    ((Math.floor(Math.random() * 255)).toString(16));
+}
+
+function couleur_alea_tout() {
+    couleur_alea_fond(document.body);
+    couleur_alea_text(titre); 
+    couleur_alea_fond(boutton_jouer)
+}
+
+click.onclick = function() {couleur_alea_tout()};
+
+titre.onclick = function() {couleur_alea_text(titre)};
+boutton_alea.onclick = function() {couleur_alea_fond(boutton_jouer)};
+fond.onclick = function() {couleur_alea_fond(document.body)};
+la_fete.onclick = function() {
+    x = setInterval(couleur_alea_tout,500);
+}
+stopper.onclick = function() {
+    clearInterval(x);
+}
+</script>

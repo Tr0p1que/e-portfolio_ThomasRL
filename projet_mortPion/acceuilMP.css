@@ -1,0 +1,49 @@
+body {
+    background-color:#401d40;
+}
+
+
+h1 {
+    color:#a75794;
+    text-align: center; 
+}
+h2{
+    text-align: center;
+}
+h3{
+    color:#a75794;
+    text-align: center;
+}
+h4{
+    color:#a75794;
+    text-align:left;
+}
+
+p{
+    color:#a75794;
+    text-align:left;
+}
+
+button{
+    background: #48d775;
+    color: black;
+    width: 55px;
+    height: 15px;
+    border: none;
+    text-align:center;
+}
+
+table{
+    background-color: aqua;
+}
+
+.jouer{
+    background: #48d775;
+    color: black;
+    width: 150px;
+    height: 25px;
+    border-radius: 70px;
+    border: none;
+    text-align:center;
+    margin: 200px;
+}

@@ -1,0 +1,74 @@
+body {
+    color:#a75794;
+    background-color:#401d40;
+}
+
+
+h1 {
+    
+    text-align: center; 
+}
+h2{
+    
+    text-align: left;
+}
+h3{
+    
+    text-align: center;
+}
+h4{
+    
+    text-align:left;
+}
+
+p{
+    
+    text-align:left;
+}
+
+button{
+    background: #48d775;
+    color: black;
+    width: 55px;
+    height: 15px;
+    border: none;
+    text-align:center;
+}
+
+table{
+    background-color: aqua;
+}
+
+.plat_princ{
+	background-color : black;
+    color: aqua;
+	height : 200px;
+	width : 250px;
+    text-align: center;
+}
+
+.plat_sec{
+    background-color : grey;
+	height :200px;
+	width : 100px;
+}
+
+.plat_mini{
+    background-color : aqua;
+	height :50px;
+	width : 100px;
+}
+
+.case{
+	background-color : white;
+	height : 20px;
+	width : 20px;
+}
+
+.jeu{
+    background-color: green;
+}
+
+.rouge{
+    color: red;
+}

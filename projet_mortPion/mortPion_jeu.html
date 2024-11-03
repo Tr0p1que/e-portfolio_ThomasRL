@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<script src="mortPion_jeu.js" async></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="mortPion_jeu.css">
+</head>
+
+<body> 
+
+    <button id='boutton_menu' >  options  </button> 
+	<ul id='menu_options' hidden='true' line-height='50%'>
+		<li> <button> <a href="reglesMP.html"> Regles </a>  </button>  </li>
+		<li> <button> <div id='newGame'> Nouvelle partie</div> </button>  </li>
+		<li> <button> <a href="acceuilMP.html"> acceuil  </a>  </button>  </li>
+		<li><button id = "ordi"> Ordinateur OFF </button></li>
+
+	</ul> 
+
+
+
+<h1> Mort-Pion +</h1>
+
+<table>
+    <tr> 
+        <td class="plat_princ" id="plat_princ">
+    
+            <table id="jeu">
+                <tr><td><table class="jeu" id="jeu_1">
+                    <tr>
+                        <td class="case" id="case_A1"></td>
+                        <td class="case" id="case_A2"></td>
+                        <td class="case" id="case_A3"></td>
+                    </tr>
+                    <tr>
+                        <td class="case" id="case_A4"></td>
+                        <td class="case" id="case_A5"><b>A</b></td>
+                        <td class="case" id="case_A6"></td>
+                    </tr>
+                    <tr>
+                        <td class="case" id="case_A7"></td>
+                        <td class="case" id="case_A8"></td>
+                        <td class="case" id="case_A9"></td>
+                    </tr>
+                </table></td>
+                <td><table class="jeu" id="jeu_2">
+                    <tr>
+                        <td class="case" id="case_B1"></td>
+                        <td class="case" id="case_B2"></td>
+                        <td class="case" id="case_B3"></td>
+                    </tr>
+                    <tr>
+                        <td class="case" id="case_B4"></td>
+                        <td class="case" id="case_B5"><b>B</b></td>
+                        <td class="case" id="case_B6"></td>
+                    </tr>
+                    <tr>
+                        <td class="case" id="case_B7"></td>
+                        <td class="case" id="case_B8"></td>
+                        <td class="case" id="case_B9"></td>
+                    </tr>
+                </table></td>
+                <td><table class="jeu" id="jeu_3"> 
+                    <tr>
+                        <td class="case" id="case_C1"></td>
+                        <td class="case" id="case_C2"></td>
+                        <td class="case" id="case_C3"></td>
+                    </tr>
+                    <tr>
+                        <td class="case" id="case_C4"></td>
+                        <td class="case" id="case_C5"><b>C</b></td>
+                        <td class="case" id="case_C6"></td>
+                    </tr>
+                    <tr>
+                        <td class="case" id="case_C7"></td>
+                        <td class="case" id="case_C8"></td>
+                        <td class="case" id="case_C9"></td>
+                    </tr> 
+                </table></td></tr>
+
+                <tr><td><table class="jeu" id="jeu_4">
+                    <tr>
+                        <td class="case" id="case_D1"></td>
+                        <td class="case" id="case_D2"></td>
+                        <td class="case" id="case_D3"></td>
+                    </tr>
+                    <tr>
+                        <td class="case" id="case_D4"></td>
+                        <td class="case" id="case_D5"><b>D</b></td>
+                        <td class="case" id="case_D6"></td>
+                    </tr>
+                    <tr>
+                        <td class="case" id="case_D7"></td>
+                        <td class="case" id="case_D8"></td>
+                        <td class="case" id="case_D9"></td>
+                    </tr>
+                </table></td>
+                <td><table class="jeu" id="jeu_5">
+                    <tr>
+                        <td class="case" id="case_E1"></td>
+                        <td class="case" id="case_E2"></td>
+                        <td class="case" id="case_E3"></td>
+                    </tr>
+                    <tr>
+                        <td class="case" id="case_E4"></td>
+                        <td class="case" id="case_E5"><b>E</b></td>
+                        <td class="case" id="case_E6"></td>
+                    </tr>
+                    <tr>
+                        <td class="case" id="case_E7"></td>
+                        <td class="case" id="case_E8"></td>
+                        <td class="case" id="case_E9"></td>
+                    </tr>
+                </table></td>
+                <td><table class="jeu" id="jeu_6">
+                    <tr>
+                        <td class="case" id="case_F1"></td>
+                        <td class="case" id="case_F2"></td>
+                        <td class="case" id="case_F3"></td>
+                    </tr>
+                    <tr>
+                        <td class="case" id="case_F4"></td>
+                        <td class="case" id="case_F5"><b>F</b></td>
+                        <td class="case" id="case_F6"></td>
+                    </tr>
+                    <tr>
+                        <td class="case" id="case_F7"></td>
+                        <td class="case" id="case_F8"></td>
+                        <td class="case" id="case_F9"></td>
+                    </tr>
+                </table></td></tr>
+
+                <tr><td><table class="jeu" id="jeu_7">
+                    <tr>
+                        <td class="case" id="case_G1"></td>
+                        <td class="case" id="case_G2"></td>
+                        <td class="case" id="case_G3"></td>
+                    </tr>
+                    <tr>
+                        <td class="case" id="case_G4"></td>
+                        <td class="case" id="case_G5"><b>G</b></td>
+                        <td class="case" id="case_G6"></td>
+                    </tr>
+                    <tr>
+                        <td class="case" id="case_G7"></td>
+                        <td class="case" id="case_G8"></td>
+                        <td class="case" id="case_G9"></td>
+                    </tr>
+                </table></td>
+                <td><table class="jeu" id="jeu_8">
+                    <tr>
+                        <td class="case" id="case_H1"></td>
+                        <td class="case" id="case_H2"></td>
+                        <td class="case" id="case_H3"></td>
+                    </tr>
+                    <tr>
+                        <td class="case" id="case_H4"></td>
+                        <td class="case" id="case_H5"><b>H</b></td>
+                        <td class="case" id="case_H6"></td>
+                    </tr>
+                    <tr>
+                        <td class="case" id="case_H7"></td>
+                        <td class="case" id="case_H8"></td>
+                        <td class="case" id="case_H9"></td>
+                    </tr>
+                </table></td>
+                <td><table class="jeu" id="jeu_9">
+                    <tr>
+                        <td class="case" id="case_I1"></td>
+                        <td class="case" id="case_I2"></td>
+                        <td class="case" id="case_I3"></td>
+                    </tr>
+                    <tr>
+                        <td class="case" id="case_I4"></td>
+                        <td class="case" id="case_I5"><b>I</b></td>
+                        <td class="case" id="case_I6"></td>
+                    </tr>
+                    <tr>
+                        <td class="case" id="case_I7"></td>
+                        <td class="case" id="case_I8"></td>
+                        <td class="case" id="case_I9"></td>
+                    </tr>
+                </table></td></tr>
+            </table>
+
+
+
+
+
+
+
+
+
+
+        </td>
+
+        <td>
+            <table>
+                <tr>
+                <td class="plat_sec">
+                    <!-- plateau secondaire-->
+                <table class="jeu" id="jeu_sec">
+                <tr>
+                    <td class="case" id="case_S1"></td>
+                    <td class="case" id="case_S2"></td>
+                    <td class="case" id="case_S3"></td>
+                </tr>
+                <tr>
+                    <td class="case" id="case_S4"></td>
+                    <td class="case" id="case_S5"></td>
+                    <td class="case" id="case_S6"></td>
+                </tr>
+                <tr>
+                    <td class="case" id="case_S7"></td>
+                    <td class="case" id="case_S8"></td>
+                    <td class="case" id="case_S9"></td>
+                </tr>
+                </table>
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- plateau miniature-->
+                        <table id="jeu_mini">
+                            <tr>
+                                <td class="case" id="case_M1"><b>A</b></td>
+                                <td class="case" id="case_M2"><b>B</b></td>
+                                <td class="case" id="case_M3"><b>C</b></td>
+                            </tr>
+                            <tr>
+                                <td class="case" id="case_M4"><b>D</b></td>
+                                <td class="case" id="case_M5"><b>E</b></td>
+                                <td class="case" id="case_M6"><b>F</b></td>
+                            </tr>
+                            <tr>
+                                <td class="case" id="case_M7"><b>G</b></td>
+                                <td class="case" id="case_M8"><b>H</b></td>
+                                <td class="case" id="case_M9"><b>I</b></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            
+        </td>
+        
+    </tr>
+
+
+
+</table>
+
+<p><button id="revenir"> coup précédent</button>  </p>
+<!-- <p> choisir la couleur du 
+<input list="choix_zone" id="zone" />
+<datalist  id="choix_zone">
+    <option value="fond"></option>
+    <option value="tableau"></option>
+    <option value="jeu"></option>
+    
+</datalist>
+ : #<input list="choix_c" id="choix_couleur"> 
+<datalist  id="choix_c">
+    <option value="401d40"></option>
+    <option value="000000"></option>
+    <option value="ffffff"></option>
+    <option value="00ffff"></option>
+</datalist>
+<button id="entrer_choix">valider</button> 
+</p> --!/>
+
+
+
+
+</body>
