@@ -214,6 +214,11 @@ video {
         width: 100%;
     }
 
+    main {
+        background-color: var(--couleur2);
+        height: 250rem;
+    }
+
     .block_presentation {
         padding: 1rem;
         width: 40rem;
