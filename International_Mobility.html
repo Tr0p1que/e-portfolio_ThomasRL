@@ -15,57 +15,40 @@
 
 <body>
 
-	<nav>
-		<ul id ='menu'>
-			<h3><b>Thomas Rodrigues--Larcher </b> </h3>
-			<button class="simple">
-				<a href="https://tr0p1que.github.io/e-portfolio_ThomasRL/page_principale.html" > Welcome </a>
-			</button>
-
-			<div class="dropdown">
-				<button class="dropdown-button"> Engineering course</button>
-				<div class="dropdown-content">
-					<a href="https://tr0p1que.github.io/e-portfolio_ThomasRL/Engineering_Course.html" id='Eng_C'> projects </a>  
-					<a href="https://tr0p1que.github.io/e-portfolio_ThomasRL/Engineering_Course.html" id='Eng_C'> productions </a> 
-				</div>
-			</div>
-
-
-			<button class="simple"> 
-				<a href="https://tr0p1que.github.io/e-portfolio_ThomasRL/sport&activities.html">Sport and activities</a>
-				
-			</button> 
-
-			<div class="dropdown">
-				<button class="dropdown-button actuel"> International Mobility </button>
-				<div class="dropdown-content">
-					<a href="https://tr0p1que.github.io/e-portfolio_ThomasRL/PCE.html" id='Int_M'> PCE </a> 
-					<a href="https://tr0p1que.github.io/e-portfolio_ThomasRL/LV2.html" id='Int_M'> LV2 : Spanish </a> 
-				</div>
-			</div>
-
-			<button class="simple">
-				<a href="https://tr0p1que.github.io/e-portfolio_ThomasRL/Sustainability.html" id='Susta'> Sustainability </a> 
-			</button>
-			
-			<div class="dropdown">
-				<button class="dropdown-button"> Career Development </button>
-				<div class="dropdown-content">
-					<a href="https://tr0p1que.github.io/e-portfolio_ThomasRL/Career_Development.html" id='Car_D'> Elevator pitch </a> 
-				</div>
-			</div>
-		</ul>
-
-	</nav>
+	<div id="nav-placeholder"></div>
+    <script>
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+				document.getElementById('Int_M').classList.add('actuel');
+            });
+    </script>
 
 	<main>
-		<div class="sous_nav"> </div>
-		<h2> Work in Progress </h2>
-		<img src="images/construction-site-153692_1280.png"> 
+		<div class="colonne principale">
+			<div class="sous_nav"> </div>
+			<h1> International Mobility - Exchange program at UConn (United-States) </h1>
+			<div class="image_mobilite"><img src="images/UConn1.jpg" ></div> 
+			<div class="zone_texte">
+				<div class="block_presentation mobilite">
+					<p>
+						During my second year of engineering school, I have the opportunity to participate in an international exchange program at the University of Connecticut (UConn) in the United States. This experience is a significant milestone in my academic journey, allowing me to immerse myself in a different culture and educational system.
+					</p>
+					<p>
+						This experience has been invaluable in shaping my career aspirations and has motivated me to pursue further opportunities for international collaboration in the future.
+					</p>
+				</div>
+			</div>
+		</div>
 	</main>
 
-	<footer>
-		Contact: 
-		<a href="https://www.linkedin.com/in/thomas-rodrigues-larcher-ba7703331/">  <img src="images/logo_Linkedin.png" class="Logo"> </a>
-	</footer>
+	<div id="footer-placeholder"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
 </body>

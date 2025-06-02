@@ -16,48 +16,15 @@
 <body>
     
 
-	<nav>
-		<ul id ='menu'>
-			<h3><b>Thomas Rodrigues--Larcher </b> </h3>
-			<button class="simple">
-				<a href="https://tr0p1que.github.io/e-portfolio_ThomasRL/page_principale.html" > Welcome </a>
-			</button>
-
-			<div class="dropdown">
-				<button class="dropdown-button"> Engineering course</button>
-				<div class="dropdown-content">
-					<a href="https://tr0p1que.github.io/e-portfolio_ThomasRL/Engineering_Course.html" id='Eng_C'> projects </a>  
-					<a href="https://tr0p1que.github.io/e-portfolio_ThomasRL/Engineering_Course.html" id='Eng_C'> productions </a> 
-				</div>
-			</div>
-
-
-			<button class="simple"> 
-				<a href="https://tr0p1que.github.io/e-portfolio_ThomasRL/sport&activities.html">Sport and activities</a>
-				
-			</button> 
-
-			<div class="dropdown">
-				<button class="dropdown-button"> International Mobility </button>
-				<div class="dropdown-content">
-					<a href="https://tr0p1que.github.io/e-portfolio_ThomasRL/PCE.html" id='Int_M'> PCE </a> 
-					<a href="https://tr0p1que.github.io/e-portfolio_ThomasRL/LV2.html" id='Int_M'> LV2 : Spanish </a> 
-				</div>
-			</div>
-
-			<button class="simple">
-				<a href="https://tr0p1que.github.io/e-portfolio_ThomasRL/Sustainability.html" id='Susta'> Sustainability </a> 
-			</button>
-			
-			<div class="dropdown">
-				<button class="dropdown-button actuel"> Career Development </button>
-				<div class="dropdown-content">
-					<a href="https://tr0p1que.github.io/e-portfolio_ThomasRL/Career_Development.html" id='Car_D'> Elevator pitch </a> 
-				</div>
-			</div>
-		</ul>
-
-	</nav>
+	<div id="nav-placeholder"></div>
+    <script>
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+				document.getElementById('Car_D').classList.add('actuel');
+            });
+    </script>
 
 	<main>
 		<div class="sous_nav"> </div>
@@ -66,11 +33,11 @@
 				<h1><b>Elevator pitch video</b></h1>
 			</div>
 
-			<div class="block_presentation">
+			<!--<div class="block_presentation">
 				<video width="450" height="350rem" controls>
 					<source src="https://tr0p1que.github.io/e-portfolio_ThomasRL/Documents/Elevatorpitchvideo.mp4" type="video/mp4">
 				</video>
-			</div>
+			</div>!-->
 		</div>
 
 		<div class="colonne milieu">
@@ -79,8 +46,12 @@
 		</div>
 	</main>
 
-	<footer>
-		Contact: 
-		<a href="https://www.linkedin.com/in/thomas-rodrigues-larcher-ba7703331/">  <img src="images/logo_Linkedin.png" class="Logo"> </a>
-	</footer>
+	<div id="footer-placeholder"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
 </body>
