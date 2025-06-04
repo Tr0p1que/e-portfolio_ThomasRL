@@ -1,0 +1,60 @@
+<!-- Page annexe du Eportfolio : Enseeiht -->
+
+
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<title> E-portfolio de Thomas Rodrigues--Larcher / Enseeiht </title>
+	<script src="" async></script> <!-- à modifier -->
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="page_principale.css"> 
+</head>
+
+<body>
+
+	<div id="nav-placeholder"></div>
+    <script>
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+				document.getElementById('Eng_C').classList.add('actuel');
+            });
+    </script>
+
+	<main>
+		<div class="sous_nav"> </div>
+
+		<div class="block_titre">
+			<h1><b>Engineering course : Enseeiht (N7)</b></h1>
+		</div>
+
+		<div class="block_presentation mobilite">
+			<p>
+				After two years of preparatory classes, I joined the ENSEEIHT engineering school in Toulouse, France. 
+				I came to this school to study computer science. That's why I entered the school in the SN specialization : (Computer Science and Telecommunications).
+			</p>
+		</div>
+
+		<div class="activite annee1">
+			<div class="block_presentation mobilite">
+				<p> During my first year at N7 I studied various subjects around computer science.</p>
+			</div>
+		</div>
+
+		
+		
+	</main>
+
+	<div id="footer-placeholder"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
