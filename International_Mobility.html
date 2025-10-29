@@ -43,16 +43,17 @@
 		</div>
 
 		<div class="image_mobilite"><img src="images/UConn1.jpg" ></div> 
-
+		<div class="presentationContainer">
 		<div class="block_presentation uconn">
 			<button onclick="toggleText1()" class="bouton_tgl tgl1">Arrival at UConn</button>
 			<img onclick="toggleText1()" src="images/triangledown_83849.png" id="triangleTgl1" >
 			<div id="Utext1" class="toggle-text">
 				<p>Before arriving at UConn, I first landed at Newark Liberty Airport (New Jersey). 
-					After sleeping at my roomate's house, I moved in UConn campus during my first day in United States. 
+					During my second day in United States and after sleeping at my roomate's house, I moved in UConn campus where 
 					I was welcomed by the UConn EGL team (Experience Global Learning). </p>
-				<p>Arrival at UConn</p>
-				<p>Arrival at UConn</p>
+				<p> First week was "Orientation week". 
+					This week was the occasion to visit UConn campus and learn about life on campus while it is not busy with too many students.</p>
+				<p>Photos du campus vide</p>
 				<p>Arrival at UConn</p>
 				<p>Arrival at UConn</p>
 				<p>Arrival at UConn</p>
@@ -61,19 +62,40 @@
 			</div>
 		</div>
 
+		
 		<div class="block_presentation uconn">
-			<button onclick="toggleText2()" class="bouton_tgl tgl2">Courses selection </button>
+			<button onclick="toggleText2()" class="bouton_tgl tgl2">Courses</button>
 			<img onclick="toggleText2()" src="images/triangledown_83849.png" id="triangleTgl2" >
 			<div id="Utext2" class="toggle-text">
-				<p>Courses selection</p>
-				<p>Courses selection</p>
-				<p>Courses selection</p>
-				<p>Courses selection</p>
-				<p>Courses selection</p>
-				<p>Courses selection</p>
-				<p>Courses selection</p>
-				
+				<p>During first two weeks, I was able to select or modify selection of classes I will follow during the 4 months at UConn. 
+					I tried to choose courses that were close to my studies at ENSEEIHT and also new for me. 
+					The following classes I followed were a mean to study with a different perspective :</p>
+				<p>CSE 3160, Functional programming : This one is close to Logiciel in SN. 
+					I studied a new language : haskell that was a bit different from OCaml, which I already studied before.</p>
+				<p>CSE 3150, C++ Essentials : This course was an other way to learn Object Oriented Programmation (OOP). At N7, we saw Java. 
+					I could see subtilities of C++ as well as strengthen my knowledge in OOP.</p>
+				<p>CSE 4300, Operating Systems : This course was a continuation of Systems Programming at N7 and a way to see OS in more details.</p>
+				<p>CSE 3500, Algorithm and Complexity : This course was intersting to understand Algorithm complexity. 
+					We saw abstract notions like NP and P set of algorithm.</p>
+				<p>ECE 3101, Signals and Systems : In Signal and Systems, I saw signal processing using Matlab.</p>
 			</div>
+		</div>
+
+		<div class="block_presentation uconn">
+			<button onclick="toggleText3()" class="bouton_tgl tgl3">Work in refectory</button>
+			<img onclick="toggleText3()" src="images/triangledown_83849.png" id="triangleTgl3" >
+			<div id="Utext3" class="toggle-text">
+				<p>ECE 3101, Signals and Systems : In Signal and Systems, I saw signal processing using Matlab.</p>
+			</div>
+		</div>
+
+		<div class="block_presentation uconn">
+			<button onclick="toggleText4()" class="bouton_tgl tgl4">??????</button>
+			<img onclick="toggleText4()" src="images/triangledown_83849.png" id="triangleTgl4" >
+			<div id="Utext4" class="toggle-text">
+				<p>ECE 3101, Signals and Systems : In Signal and Systems, I saw signal processing using Matlab.</p>
+			</div>
+		</div>
 		</div>
 	</main>
 	<script>
@@ -86,6 +108,18 @@
 	function toggleText2() {
 		const bloc = document.getElementById('Utext2');
 		const triangle = document.getElementById('triangleTgl2');
+		triangle.classList.toggle("rotate-image");
+		bloc.classList.toggle('open');
+	}
+	function toggleText3() {
+		const bloc = document.getElementById('Utext3');
+		const triangle = document.getElementById('triangleTgl3');
+		triangle.classList.toggle("rotate-image");
+		bloc.classList.toggle('open');
+	}
+	function toggleText4() {
+		const bloc = document.getElementById('Utext4');
+		const triangle = document.getElementById('triangleTgl4');
 		triangle.classList.toggle("rotate-image");
 		bloc.classList.toggle('open');
 	}
