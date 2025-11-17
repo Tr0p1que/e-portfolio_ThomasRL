@@ -19,7 +19,7 @@
 
 /*_____________________________________ barre de navigation____________________________________ */
 nav {
-    background-color: var(--couleur1);
+    background-color: var(--couleur2);
     color: var(--text);
     position: fixed;
     width: 100%;
@@ -237,7 +237,7 @@ main {
 /* Footer */
 footer {
     color: var(--text);
-    background-color: var(--couleur1);
+    background-color: var(--couleur2);
     height: 4rem;
     display: flex;
     align-items: center;
@@ -256,7 +256,7 @@ footer {
 
     border-left-style: solid;
     border-left-width: 0.1rem;
-    border-left-color: white;
+    border-left-color: var(--text);
 }
 
 
