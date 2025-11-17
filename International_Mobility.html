@@ -9,7 +9,6 @@
 	<meta charset="utf-8">
 	<title> E-portfolio de Thomas Rodrigues--Larcher / International Mobility </title>
 	<script src="" async></script> <!-- à modifier -->
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="page_principale.css"> 
 </head>
 
@@ -27,75 +26,99 @@
 
 	<main>
 		<div class="sous_nav"> </div>
-		<h1> International Mobility - Exchange program at UConn  </h1> 
-		<h1> (University of Connecticut, United-States)</h1>
+		<div class="wrap">
+      <!-- Titre -->
+			<div class="hero">
+				<h1> International Mobility - Exchange program at UConn  </h1> 
+				<h1> (University of Connecticut, United-States)</h1>
 
-		<div class="image_mobilite"><a href="https://uconn.edu/about-us/" target="_blank">
-			<img src="images/UConnLogo.png" alt="UConn logo">
-		</a></div>
+				<div class="image_mobilite"><a href="https://uconn.edu/about-us/" target="_blank">
+					<img src="images/UConnLogo.png" alt="UConn logo">
+				</a></div>
+			</div>
 
-		<div class="zone_texte">
 			<div class="block_presentation mobilite">
 				<p>
 					During my second year of engineering school, I have the opportunity to participate in an international exchange program at the University of Connecticut (UConn) in the United States. This experience is a significant milestone in my academic journey, allowing me to immerse myself in a different culture and educational system.
 				</p>
 			</div>
-		</div>
 
-		<div class="image_mobilite"><img src="images/UConn1.jpg" ></div> 
-		<div class="presentationContainer">
-		<div class="block_presentation uconn">
-			<button onclick="toggleText1()" class="bouton_tgl tgl1">Arrival at UConn</button>
-			<img onclick="toggleText1()" src="images/triangledown_83849.png" id="triangleTgl1" >
-			<div id="Utext1" class="toggle-text">
-				<p>Before arriving at UConn, I first landed at Newark Liberty Airport (New Jersey). 
-					During my second day in United States and after sleeping at my roomate's house, I moved in UConn campus where 
-					I was welcomed by the UConn EGL team (Experience Global Learning). </p>
-				<p> First week was "Orientation week". 
-					This week was the occasion to visit UConn campus and learn about life on campus while it is not busy with too many students.</p>
-				<p>Photos du campus vide</p>
-				<p>Arrival at UConn</p>
-				<p>Arrival at UConn</p>
-				<p>Arrival at UConn</p>
-				<p>Arrival at UConn</p>
+      <div class="grid">
+        <!-- Sommaire collant -->
+        <div class="toc" aria-label="Sommaire">
+          <h3>On this page</h3>
+          <a href="#Arrival" onclick="toggleText1()">Arrival</a>
+          <a href="#CourseSelection" onclick="toggleText2()"> Course Selection</a>
+          <a href="#LifeCampus" onclick="toggleText3()">Life on campus </a>
+          <a href="#Voyages" onclick="toggleText4()"> Trips </a>
+        </div>
 
-			</div>
-		</div>
+        <!-- Contenu -->
+        <div>
+          <div class="block_presentation uconn" id="Arrival">
+            <button onclick="toggleText1()" class="bouton_tgl tgl1"><h2>Arrival at UConn</h2></button>
+            <img onclick="toggleText1()" src="images/triangledown_83849.png" id="triangleTgl1" >
+            <div id="Utext1" class="toggle-text">
+              <h3>Arrival in United-States</h3>
+              <div class="meta">Week 0 (first weekend) - Move-in</div>
+              <p>Before arriving at UConn (Connecticut), I first landed at Newark Liberty Airport (New Jersey). 
+                During my second day in United States and after sleeping at my roomate's house, I moved in UConn campus where 
+                I was welcomed by the UConn EGL team (Experience Global Learning). </p>
+              <h3>Orientation week</h3>
+              <div class="meta">Week 1 - Orientation</div>
+              <p> First week was "Orientation week". 
+                This week was the occasion to visit UConn campus 
+                and learn about life on campus while it is not busy with 2000+ students.
+                Orientation week was also the moment we looked for traveling possibilities. (See <b>Trips</b>.)
+                Finaly, I also took time to finalise some administrative papers for the job I applied on campus.
+                (See <b>Life on campus</b>)</p>
+              <div><img src="images/CampusVide.jpg" width="30%"><img src="images/CampusVideRoute.jpg" width="30%"><img src="images/CampusVideLac.jpg" width="30%"></div>
+              <div class="meta"> Images of campus before classes start </div>
 
-		
-		<div class="block_presentation uconn">
-			<button onclick="toggleText2()" class="bouton_tgl tgl2">Courses</button>
-			<img onclick="toggleText2()" src="images/triangledown_83849.png" id="triangleTgl2" >
-			<div id="Utext2" class="toggle-text">
-				<p>During first two weeks, I was able to select or modify selection of classes I will follow during the 4 months at UConn. 
-					I tried to choose courses that were close to my studies at ENSEEIHT and also new for me. 
-					The following classes I followed were a mean to study with a different perspective :</p>
-				<p>CSE 3160, Functional programming : This one is close to Logiciel in SN. 
-					I studied a new language : haskell that was a bit different from OCaml, which I already studied before.</p>
-				<p>CSE 3150, C++ Essentials : This course was an other way to learn Object Oriented Programmation (OOP). At N7, we saw Java. 
-					I could see subtilities of C++ as well as strengthen my knowledge in OOP.</p>
-				<p>CSE 4300, Operating Systems : This course was a continuation of Systems Programming at N7 and a way to see OS in more details.</p>
-				<p>CSE 3500, Algorithm and Complexity : This course was intersting to understand Algorithm complexity. 
-					We saw abstract notions like NP and P set of algorithm.</p>
-				<p>ECE 3101, Signals and Systems : In Signal and Systems, I saw signal processing using Matlab.</p>
-			</div>
-		</div>
+            </div>
+          </div>
 
-		<div class="block_presentation uconn">
-			<button onclick="toggleText3()" class="bouton_tgl tgl3">Work in refectory</button>
-			<img onclick="toggleText3()" src="images/triangledown_83849.png" id="triangleTgl3" >
-			<div id="Utext3" class="toggle-text">
-				<p>ECE 3101, Signals and Systems : In Signal and Systems, I saw signal processing using Matlab.</p>
-			</div>
-		</div>
+          
+          <div class="block_presentation uconn" id="CourseSelection">
+            <button onclick="toggleText2()" class="bouton_tgl tgl2"><h2>Courses</h2></button>
+            <img onclick="toggleText2()" src="images/triangledown_83849.png" id="triangleTgl2" >
+            <div id="Utext2" class="toggle-text">
+              <p>During first two weeks, I was able to select or modify selection of classes I will follow during the 4 months at UConn. 
+                I tried to choose courses that were close to my studies at ENSEEIHT and also new for me. 
+                The following classes I followed were a mean to study with a different perspective :</p>
+              <p>CSE 3160, Functional programming : This one is close to Logiciel in SN. 
+                I studied a new language : haskell that was a bit different from OCaml, which I already studied before.</p>
+              <p>CSE 3150, C++ Essentials : This course was an other way to learn Object Oriented Programmation (OOP). At N7, we saw Java. 
+                I could see subtilities of C++ as well as strengthen my knowledge in OOP.</p>
+              <p>CSE 4300, Operating Systems : This course was a continuation of Systems Programming at N7 and a way to see OS in more details.</p>
+              <p>CSE 3500, Algorithm and Complexity : This course was intersting to understand Algorithm complexity. 
+                We saw abstract notions like NP and P set of algorithm.</p>
+              <p>ECE 3101, Signals and Systems : In Signal and Systems, I saw signal processing using Matlab.</p>
+            </div>
+          </div>
 
-		<div class="block_presentation uconn">
-			<button onclick="toggleText4()" class="bouton_tgl tgl4">??????</button>
-			<img onclick="toggleText4()" src="images/triangledown_83849.png" id="triangleTgl4" >
-			<div id="Utext4" class="toggle-text">
-				<p>ECE 3101, Signals and Systems : In Signal and Systems, I saw signal processing using Matlab.</p>
-			</div>
-		</div>
+          <div class="block_presentation uconn" id="LifeCampus">
+            <button onclick="toggleText3()" class="bouton_tgl tgl3"><h2>Life on campus</h2></button>
+            <img onclick="toggleText3()" src="images/triangledown_83849.png" id="triangleTgl3" >
+            <div id="Utext3" class="toggle-text">
+              <ul>
+                <li><strong>Northwood Apartments</strong> — bref descriptif, projet marquant.</li>
+                <li><strong>Sports events</strong> — compétences acquises.</li>
+                <li><strong>Job in Refectory</strong> — compétences acquises.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="block_presentation uconn" id="Voyages">
+            <button onclick="toggleText4()" class="bouton_tgl tgl4"><h2>Trips</h2></button>
+            <img onclick="toggleText4()" src="images/triangledown_83849.png" id="triangleTgl4" >
+            <div id="Utext4" class="toggle-text">
+              <p>ECE 3101, Signals and Systems : In Signal and Systems, I saw signal processing using Matlab.</p>
+            </div>
+          </div>
+          <div class="image_mobilite"><img src="images/UConn1.jpg" ></div>
+        </div> 
+      </div>
 		</div>
 	</main>
 	<script>

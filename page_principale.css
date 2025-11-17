@@ -1,7 +1,11 @@
 /* _____________________________________________ Variables _______________________________________*/
 :root {
-    --couleur2: rgb(241, 235, 255);
+    --couleur2: rgb(241, 235, 249);
     --couleur1: rgb(51, 37, 49);
+    --bg: #fff; --text:#2b2b2b; --muted:#777; --line:#e6e2ee;
+    --accent:#cdb4db;                   /* accent doux (modifiable) */
+    --radius: 14px; --shadow: 0 6px 20px rgba(0,0,0,.06);
+    --maxw: 1300px;
 }
 
 
@@ -16,7 +20,7 @@
 /*_____________________________________ barre de navigation____________________________________ */
 nav {
     background-color: var(--couleur1);
-    color: var(--couleur2);
+    color: var(--text);
     position: fixed;
     width: 100%;
     z-index: 5;
@@ -31,7 +35,7 @@ nav {
 .simple {
     float: left;
     display: block;
-    color: var(--couleur2);
+    color: var(--text);
     background-color: var(--couleur1);
     text-align: center;
     border: none;
@@ -46,11 +50,11 @@ nav {
 
 .simple:hover, .simple.actuel{
     background-color: var(--couleur2);
-    color: rgb(51, 37, 49);
+    color: var(--text);
 }
         /* Ceux avec dropdown */
 .dropdown {  
-    color: var(--couleur2) ;
+    color: var(--text);
     display: inline-block;
     position: relative;
     width: 15%;
@@ -59,14 +63,14 @@ nav {
 .dropdown-button {
     background-color: rgb(51, 37, 49);
     border: none;
-    color: var(--couleur2);
+    color: var(--text);
     width: 100%;
     height: 5rem;
 }
 
 .dropdown-button:hover, .dropdown-button.actuel {
     background-color: var(--couleur2);
-    color: rgb(51, 37, 49);
+    color: var(--text);
 }
 
 .dropdown-content {
@@ -85,7 +89,7 @@ nav {
 
 .dropdown-content a:hover {
     background-color: var(--couleur2);
-    color: rgb(51, 37, 49) ;
+    color: var(--text);
 }
 
 .dropdown:hover .dropdown-content {
@@ -97,11 +101,77 @@ nav {
     width: 100%;
 }
 /*_______________________________________________main_____________________________________________ */ 
+body{
+    margin:0; 
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; 
+    color:var(--text); 
+    background:var(--bg); 
+    line-height:1.6;
+}
+
 
 main {
-    display: inline-block;
-    background-color: white;
+    background-color: var(--bg);
 }
+
+.wrap{
+    max-width:var(--maxw); 
+    margin:auto; 
+    padding:24px;
+}
+
+.hero{
+    background: var(--couleur2); 
+    border-radius: var(--radius); 
+    padding:28px; 
+    box-shadow: var(--shadow);
+}
+  
+.hero h1{
+    margin:0 0 6px; 
+    color:var(--couleur1);
+}
+
+/* Grid */
+.grid{
+    display:grid;
+    grid-template-columns: 260px 1fr;
+    gap:28px;
+    margin-top:24px;
+}
+
+/* TOC (nav2)*/
+.toc{
+    position:sticky; 
+    top:16px;
+    align-self:start;
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius: var(--radius);
+    padding:16px;
+}
+
+.toc a{
+    display:block;
+    text-decoration:none;
+    color:var(--text);
+    padding:6px 0;
+    border-left:3px solid transparent;
+    padding-left:8px;
+}
+
+.toc a:hover{
+    color:var(--couleur1);
+    border-left-color:var(--accent);
+}
+
+/* Contenu */
+.meta{
+    font-size:14px;
+    color:var(--muted);
+    margin-bottom:8px;
+}
+
 
 /* Activite */
 
@@ -157,7 +227,7 @@ main {
 .date {
     text-align: right;
     font-size: 1.5rem;
-    color: var(--couleur1);
+    color: var(--text);
 
     padding-right: 0.5rem;
 
@@ -166,7 +236,7 @@ main {
 
 /* Footer */
 footer {
-    color: white;
+    color: var(--text);
     background-color: var(--couleur1);
     height: 4rem;
     display: flex;
@@ -189,19 +259,11 @@ footer {
     border-left-color: white;
 }
 
-/* balises */
-
-h1 {
-    text-align: center;
-    margin: 0rem;
-}
-
-
 
 /* Colonnes du main */
 .colonne {
     float: left;
-    color:black;
+    color:var(--text);
     /*background-color: plum;*/
 }
   
@@ -227,12 +289,10 @@ h1 {
 }
 
 .block_presentation {
-    background-color: var(--couleur2);
-    color: black;
-    border-style: solid;
-    border-radius: 1rem;
-    border-width: 0.3rem;
-    border-color: black;
+    background-color: white;
+    border:1px solid var(--line); 
+    border-radius: var(--radius);  
+    box-shadow: var(--shadow); 
 }
 
 .block_presentation.principal {
@@ -252,22 +312,13 @@ h1 {
 }
 
 .block_presentation.mobilite {
-    padding: 1rem;
-    width: 30%;
-    margin-left: 35%;
-    margin-right: 35%;
+    margin-top: 1rem;
+    padding:22px;
+    margin-bottom:18px;
 }
 
 .block_presentation.uconn {
-    width: 98%;
-    margin-left: 1%;
-    margin-right: 1%;
-    margin-top: 1rem;
-}
-
-.presentationContainer {
-    display: inline-flex;
-    align-items: flex-start;
+    margin-bottom:18px;
 }
   
 /* colonne principale */
@@ -294,7 +345,7 @@ h1 {
 
 .bouton_CV{
     background-color: var(--couleur1);
-    color: var(--couleur2);
+    color: var(--text);
     font-size: 1rem;
 
     border-style: solid;
@@ -335,57 +386,34 @@ video {
 /* ----------Toogle Texts/buttons*/
 
 .bouton_tgl {
-    background-color: var(--couleur2);
-    color: var(--couleur1);
+    background-color: white;
+    color: var(--text);
     font-size: 1rem;
 
     border-style: solid;
-    border-color: var(--couleur2);
+    border-color: white;
     border-width: 0.3rem;
-}
-
-.bouton_tgl.tgl1 {
     width : 85%;
     height: 5rem;
     border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
     font-size: 1rem;
 }
 
-.bouton_tgl.tgl2 {
-    width : 85%;
-    height: 5rem;
-    border-top-left-radius: 2rem;
-    font-size: 1rem;
-}
-
-.bouton_tgl.tgl3 {
-    width : 85%;
-    height: 5rem;
-    border-top-left-radius: 2rem;
-    font-size: 1rem;
-}
-
-.bouton_tgl.tgl4 {
-    width : 85%;
-    height: 5rem;
-    border-top-left-radius: 2rem;
-    font-size: 1rem;
-}
 
 .rotate-image {
     transform: rotate(90deg);
 }
 
 .toggle-text {
-    margin-left: 5%;
-    margin-right: 5%;
+    background-color: white;
+    padding-left: 5%;
+    padding-right: 5%;
 
     max-height: 0;
     overflow: hidden;
     opacity: 0;
     transition: max-height 1s ease, opacity 0.5s ease;
-    /* Optionnel : pour éviter le "saut" de contenu */
-    margin-top: 10px;
 }
 .toggle-text.open {
     max-height: 50rem;
@@ -401,7 +429,7 @@ video {
 
     nav {
         background-color: var(--couleur1);
-        color: var(--couleur2);
+        color: var(--text);
         position: fixed;
         width: 100%;
         z-index: 5;
@@ -412,6 +440,8 @@ video {
         height: 10rem;
         width: 100%;
     }
+    .toc{position:static;}
+    .grid{grid-template-columns: 1fr;} 
 
 
     .block_presentation {
@@ -437,7 +467,7 @@ video {
 
     .bouton_CV{
         background-color: var(--couleur1);
-        color: var(--couleur2);
+        color: var(--text);
         font-size:2rem;
     }
 
