@@ -316,6 +316,7 @@ footer {
 
 .block_presentation.uconn {
     margin-bottom:18px;
+    padding-bottom:1rem;
 }
   
 /* colonne principale */
@@ -341,7 +342,7 @@ footer {
 }
 
 .bouton_CV{
-    background-color: var(--couleur1);
+    background-color: var(--couleur2);
     color: var(--text);
     font-size: 1rem;
 
