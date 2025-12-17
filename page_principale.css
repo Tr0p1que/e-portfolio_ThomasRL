@@ -21,10 +21,10 @@
 nav {
     background-color: var(--couleur2);
     color: var(--text);
-    position: fixed;
     width: 100%;
     z-index: 5;
     max-height: 7rem;
+    padding-top: 1rem;
 
 }
 
@@ -96,10 +96,7 @@ nav {
     display: block;
 }
 
-.sous_nav {
-    height: 7rem;
-    width: 100%;
-}
+
 /*_______________________________________________main_____________________________________________ */ 
 body{
     margin:0; 
