@@ -1,0 +1,19 @@
+/* _____________________________________________ Variables _______________________________________*/
+:root {
+    --couleur2: rgb(241, 235, 249);
+    --couleur1: rgb(51, 37, 49);
+    --bg: #fff; --text:#2b2b2b; --muted:#777; --line:#e6e2ee;
+    --accent:#cdb4db;                   /* accent doux (modifiable) */
+    --radius: 14px; --shadow: 0 6px 20px rgba(0,0,0,.06);
+    --maxw: 1300px;
+}
+
+
+
+.block_presentation.principal {
+    padding: 1rem;
+    width: 90%;
+    margin-top: 4rem;
+    margin-left: 1rem;
+}
+

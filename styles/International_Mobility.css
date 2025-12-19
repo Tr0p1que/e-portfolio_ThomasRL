@@ -1,0 +1,38 @@
+/* _____________________________________________ Variables _______________________________________*/
+:root {
+    --couleur2: rgb(241, 235, 249);
+    --couleur1: rgb(51, 37, 49);
+    --bg: #fff; --text:#2b2b2b; --muted:#777; --line:#e6e2ee;
+    --accent:#cdb4db;                   /* accent doux (modifiable) */
+    --radius: 14px; --shadow: 0 6px 20px rgba(0,0,0,.06);
+    --maxw: 1300px;
+}
+
+/* _____________________________________________ Styles _______________________________________*/
+
+.block_presentation.uconn {
+    margin-bottom:18px;
+    padding-bottom:1rem;
+}
+
+.block_presentation.mobilite {
+    margin-top: 1rem;
+    padding:22px;
+    margin-bottom:18px;
+}
+
+.image_mobilite {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 70rem) {
+    .block_presentation.mobilite {
+        padding: 1rem;
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+        font-size: 1rem;
+    }
+}

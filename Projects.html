@@ -1,0 +1,66 @@
+<!-- Page annexe du Eportfolio : Engineering Course -->
+
+
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <title> E-portfolio de Thomas Rodrigues--Larcher / Engineering Course </title>
+  <script src="" async></script> <!-- à modifier -->
+  <link rel="stylesheet" href="styles/commun.css"> 
+  <link rel="stylesheet" href="styles/Projects.css"> 
+</head>
+
+<body>
+
+  <div id="nav-placeholder"></div>
+    <script>
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+        document.getElementById('Eng_C').classList.add('actuel');
+            });
+    </script>
+
+  <main>
+    <div class="wrap">
+      <div class="hero">
+        <h1><b>Personal Projects</b></h1>
+			</div>
+
+      <div class="grid">
+        <!-- Sommaire collant -->
+        <div class="toc" aria-label="Sommaire">
+          <h3>On this page</h3>
+
+        </div>
+
+        <!-- Contenu -->
+        <div>
+          <div class="block_presentation projects" id="Chess">
+            <h2>-Quantum chess game (with a friend)</h2>
+            <button class="bouton_CV sport"> Go to chess game (not available)</button>
+            <img src="images/image_chesss_game.png">
+          </div>
+
+          <div class="block_presentation projects" id="Chess">
+            <h2>-Mort Pion 3D</h2>
+            <button class="bouton_CV sport" onclick="window.location.href='https://tr0p1que.github.io/e-portfolio_ThomasRL/projet_mortPion/mortPion_jeu.html';"> Go to Mort Pion (available !)</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="footer-placeholder"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
