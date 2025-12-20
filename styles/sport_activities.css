@@ -13,3 +13,12 @@
     margin-top: 4rem;
     margin-left: 1rem;
 }
+
+.bouton_CV.sport{
+    width : 25%;
+    height: 5rem;
+    margin-left: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    font-size: 1rem;
+}

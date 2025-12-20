@@ -6,65 +6,86 @@
 <html lang="fr">
 
 <head>
-	<meta charset="utf-8">
-	<title> E-portfolio de Thomas Rodrigues--Larcher / Sustainability </title>
-	<script src="" async></script> <!-- à modifier -->
-	<link rel="stylesheet" href="styles/commun.css"> 
-	<link rel="stylesheet" href="styles/Sustainability.css"> 
+  <meta charset="utf-8">
+  <title> E-portfolio de Thomas Rodrigues--Larcher / Sustainability </title>
+  <script src="" async></script> <!-- à modifier -->
+  <link rel="stylesheet" href="styles/commun.css"> 
+  <link rel="stylesheet" href="styles/Sustainability.css"> 
 </head>
 
 <body>
 
-	<div id="nav-placeholder"></div>
+  <div id="nav-placeholder"></div>
     <script>
         fetch('nav.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('nav-placeholder').innerHTML = data;
-				document.getElementById('Susta').classList.add('actuel');
+        document.getElementById('Susta').classList.add('actuel');
             });
     </script>
 
-	<main>
-	  <div class="wrap">
-	    <div class="hero">
-	      <h1> Civic Engagement </h1>
-	    </div>
+  <main>
+    <div class="wrap">
+      <div class="hero">
+        <h1> Civic Engagement </h1>
+      </div>
 
-	    <div class="block_presentation sustainability">
-	      <p> During my studies, I had mutiple occasions to engage.
-	      </p>
-	    </div>
+      <div class="block_presentation sustainability">
+        <p> During my studies, I had mutiple occasions to engage.
+        </p>
+      </div>
 
-	    <div class="grid">
-		  	<!-- Sommaire collant -->
-	      <div class="toc" aria-label="Sommaire">
-	        <h3>On this page</h3>
+      <div class="grid">
+        <!-- Sommaire collant -->
+        <div class="toc" aria-label="Sommaire">
+          <h3>On this page</h3>
           <a href="#Capitol"> Capitol du libre </a>
           <a href="#Cordee" > Cordées de la réussite</a>
-          <a href="#JOParis" > Paris 2024 Olympic Games </a>
-	      </div>
+          <a href="#Paris2024" > Paris 2024 Olympic Games </a>
+        </div>
 
         <!-- Contenu -->
-	      <div>
-	        <div class="block_presentation sustainability" id="Capitol">
-		        <h3>Capitol du libre</h3>
+        <div>
+          <div class="block_presentation sustainability" id="Capitol">
+            <h3>Capitol du libre</h3>
             <div class="meta"> November 15-17 2024</div>
-		      </div>
-	        <div class="block_presentation sustainability" id="Cordee">
-		        <h3>Cordées de la réussite</h3>
-            <div class="meta"> Octobre 2024 - Mai 2025</div>
-		      </div>
-	        <div class="block_presentation sustainability" id="JOParis">
-		        <h3>Paris 2024 Olympic Games</h3>
-            <div class="meta"> Été 2024 </div>
-		      </div>
-	      </div>
-      </div>
-	  </div>
-	</main>
+          </div>
 
-	<div id="footer-placeholder"></div>
+          <div class="block_presentation sustainability" id="Cordee">
+            <h2>Tutoring : Les Cordées de la Réussite</h2>
+            <div class="meta"> October 2024 - April 2025</div>
+            <div class="image_profil"><img src="images/Cordee.jpg" ></div> 
+            <div class="image_mobilite"><img src="images/imageRobots.png"></div> 
+            <p>
+            During my first year at ENSEEIHT I was engaged in a programm
+            called “Cordée de la Réussite” in which the objective is assisting
+            student at middle school for a project called “Atelier Robotique”.
+            </p> 
+            <p>	
+            We were helping them programming a robot to perform simple tasks.
+            At the end of the year, we participated in the junior robotics competition in 
+            "La cité de l'espace" in Toulouse.
+            </p>
+          </div>
+
+          <div class="block_presentation sustainability" id="Paris2024">
+            <h2>Volonteering for Paris 2024 OG</h2>
+            <div class="meta"> Summer 2024</div>
+            <div class="image_mobilite"><img src="images/JOVaires.jpeg" width="60%"></div> 
+            <p> During a summer I worked as a volunteer for Paris 2024 Olympic
+              Games.. My role was to guide athletes, delegations and drivers of
+              athletes’ buses in the welcoming zone of an Olympic competition
+              site. This experience improved my competences in communicating
+              in English and group working.</p>
+            <button class="bouton_CV sustainability" onclick="window.location.href='https://tr0p1que.github.io/e-portfolio_ThomasRL/Documents/2024-09-17_volontaire-de-paris-2024-j-ai-fait-les-jeux-fr.pdf';">  Badge OG (French)</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="footer-placeholder"></div>
     <script>
         fetch('footer.html')
             .then(response => response.text())

@@ -7,3 +7,9 @@
     --radius: 14px; --shadow: 0 6px 20px rgba(0,0,0,.06);
     --maxw: 1300px;
 }
+
+.block_presentation.career {
+    margin-top: 1rem;
+    padding:22px;
+    margin-bottom:18px;
+}

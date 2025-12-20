@@ -17,3 +17,10 @@
     margin-left: 1rem;
 }
 
+.bouton_CV.principal{
+    width : 25%;
+    height: 8rem;
+    margin: 1rem;
+    border-top-right-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+}

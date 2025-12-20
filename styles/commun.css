@@ -224,13 +224,7 @@ footer {
     width: 100%;
 }
 
-.bouton_CV.principal{
-    width : 25%;
-    height: 8rem;
-    margin: 1rem;
-    border-top-right-radius: 3rem;
-    border-bottom-left-radius: 3rem;
-}
+
 
 .bouton_CV.sport{
     width : 25%;
@@ -239,6 +233,10 @@ footer {
     border-top-right-radius: 2rem;
     border-bottom-left-radius: 2rem;
     font-size: 1rem;
+}
+
+.bouton_CV:hover {
+    border-color: var(--accent);
 }
 
 .bouton_CV a {
