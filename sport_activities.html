@@ -1,0 +1,64 @@
+<!-- Page annexe du Eportfolio : sport and other activities -->
+
+
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <title> E-portfolio de Thomas Rodrigues--Larcher / sport and other activities </title>
+  <script src="" async></script> <!-- à modifier -->
+  <link rel="stylesheet" href="styles/commun.css"> 
+  <link rel="stylesheet" href="styles/sport_activities.css"> 
+</head>
+
+<body>
+
+  <div id="nav-placeholder"></div>
+    <script>
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+        document.getElementById('Spo_A').classList.add('actuel');
+            });
+    </script>
+
+  <main>
+    <div class="wrap">
+      <!-- Titre -->
+      <div class="hero">
+        <h1><b>Sport and associative activities</b></h1>
+      </div>
+
+      <div class="grid">
+        <!-- Sommaire collant -->
+        <div class="toc" aria-label="Sommaire">
+          <h3>On this page</h3>
+          <a href="#Running"> Running </a>
+        </div>
+
+        <!-- Contenu -->
+        <div>
+
+          <div class="block_presentation sport" id="Running">
+            <h2>Sport : running</h2>
+            <p>
+              Every week I take the time to go running. I am training for running competitions sush as "Course Rose" organized by associations of INPToulouse	
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="footer-placeholder"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
